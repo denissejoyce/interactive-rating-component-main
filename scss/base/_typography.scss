@@ -1,0 +1,23 @@
+@use "../util/" as *;
+
+body {
+  color: $font-body;
+  font-family: "Overpass", serif;
+
+  a {
+    color: $accent;
+  }
+
+  .card {
+    h2 {
+      color: $font-heading;
+    }
+
+    .btn__submit {
+      color: $bg;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+  }
+}

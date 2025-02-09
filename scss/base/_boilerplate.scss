@@ -1,0 +1,32 @@
+@use "../util/" as *;
+
+* {
+  transition: all ease 0.5s;
+}
+
+body {
+  background-color: $bg;
+
+  main {
+    @include toFlex(row);
+    min-height: 90vh;
+    justify-content: center;
+  }
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+
+.sr-only {
+  clip-path: inset(50%);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  position: absolute;
+  margin: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+}

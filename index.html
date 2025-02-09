@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive rating component - frontend mentor solution"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/main.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">Rating card</h1>
+      <article class="card card--rating">
+        <img
+          class="star"
+          src="images/icon-star.svg"
+          aria-hidden="true"
+          alt=""
+        />
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <section class="rating">
+          <span class="btn btn__rating">1</span>
+          <span class="btn btn__rating">2</span>
+          <span class="btn btn__rating">3</span>
+          <span class="btn btn__rating">4</span>
+          <span class="btn btn__rating">5</span>
+        </section>
+        <button class="btn btn__submit">Submit</button>
+      </article>
+
+      <article class="card card--thankYou hidden">
+        <section>
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </section>
+        <div>
+          <img src="images/illustration-thank-you.svg" alt="" />
+          <p>You selected <span class="user__rating"></span> out of 5</p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Denisse Joyce</a>.
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

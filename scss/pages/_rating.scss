@@ -1,0 +1,9 @@
+@use "../util/" as *;
+
+.card--rating {
+  .star {
+    border-radius: 50%;
+    background-color: $card-1;
+    padding: 10px;
+  }
+}

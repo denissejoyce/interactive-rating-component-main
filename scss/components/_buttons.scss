@@ -1,0 +1,42 @@
+@use "../util/" as *;
+
+.btn {
+  &__rating {
+    background-color: $card-1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__rating:hover {
+    background-color: $accent;
+    cursor: pointer;
+  }
+
+  &__submit {
+    background-color: $accent;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  &__submit:hover {
+    background-color: $font-heading;
+    cursor: pointer;
+  }
+
+  .before {
+    background-color: $font-heading;
+  }
+}
+
+.rating {
+  @include toFlex(row, 0);
+  justify-content: space-between;
+  margin: 15px 0;
+  width: 100%;
+}
