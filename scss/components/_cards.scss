@@ -2,13 +2,21 @@
 
 .card {
   @include toFlex(column, 15px);
-  //   background: -moz-linear-gradient(45deg, $card, $card-2, $card-3);
-  //   background: linear-gradient(45deg, $card, $card-2, $card-3);
   background-color: $card;
   border-radius: 12px;
   margin: auto 8%;
   padding: 25px;
   align-items: flex-start;
+
+  @include breakpoint(medium) {
+    margin: auto 20%;
+  }
+  @include breakpoint(large) {
+    margin: auto 30%;
+  }
+  @include breakpoint(xlarge) {
+    margin: auto 38%;
+  }
 }
 
 .hidden {
