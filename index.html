@@ -40,16 +40,26 @@
           is appreciated to help us improve our offering!
         </p>
         <section class="rating">
-          <span class="btn base btn__rating">1</span>
-          <span class="btn base btn__rating">2</span>
-          <span class="btn base btn__rating">3</span>
-          <span class="btn base btn__rating">4</span>
-          <span class="btn base btn__rating">5</span>
+          <span class="btn base btn__rating"
+            >1<span class="sr-only">star</span></span
+          >
+          <span class="btn base btn__rating"
+            >2<span class="sr-only">star</span></span
+          >
+          <span class="btn base btn__rating"
+            >3<span class="sr-only">star</span></span
+          >
+          <span class="btn base btn__rating"
+            >4<span class="sr-only">star</span></span
+          >
+          <span class="btn base btn__rating"
+            >5<span class="sr-only">star</span></span
+          >
         </section>
-        <button class="btn btn__submit">Submit</button>
+        <button class="btn btn__submit" onclick="getRating()">Submit</button>
       </article>
 
-      <article class="card card--thankYou hidden">
+      <article class="card card--thankYou">
         <section>
           <h2>Thank you!</h2>
           <p>
@@ -58,8 +68,14 @@
           </p>
         </section>
         <div>
-          <img src="images/illustration-thank-you.svg" alt="" />
-          <p>You selected <span class="user__rating"></span> out of 5</p>
+          <img
+            src="images/illustration-thank-you.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <p class="rating__info">
+            You selected <span class="user__rating"></span> out of 5
+          </p>
         </div>
       </article>
     </main>

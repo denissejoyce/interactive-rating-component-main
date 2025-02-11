@@ -1,11 +1,11 @@
 @use "../util/" as *;
 
 .card {
-  @include toFlex(column, 15px);
+  @include toFlex(column, 0.938em);
   background-color: $card;
   border-radius: 12px;
   margin: auto 8%;
-  padding: 25px;
+  padding: 1.563em;
   align-items: flex-start;
 
   @include breakpoint(medium) {
@@ -17,8 +17,4 @@
   @include breakpoint(xlarge) {
     margin: auto 38%;
   }
-}
-
-.hidden {
-  display: none;
 }

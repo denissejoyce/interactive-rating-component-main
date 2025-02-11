@@ -15,7 +15,7 @@ body {
 }
 
 .attribution {
-  font-size: 13px;
+  font-size: clamp(0.75rem, 3.467vw, 0.938rem);
   text-align: center;
 }
 

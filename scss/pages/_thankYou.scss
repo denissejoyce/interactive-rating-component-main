@@ -1,0 +1,16 @@
+@use "../util/" as *;
+
+.card--thankYou {
+  @include toFlex(column-reverse, 0.5em);
+  align-items: center;
+  text-align: center;
+  padding: 2.375em;
+  display: none;
+
+  .rating__info {
+    background-color: $card-1;
+    border-radius: 25px;
+    margin: 1.563em auto;
+    padding: 0.5em 1.375em;
+  }
+}

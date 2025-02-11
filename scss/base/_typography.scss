@@ -3,6 +3,7 @@
 body {
   color: $font-body;
   font-family: "Overpass", serif;
+  font-size: clamp(0.813rem, 4vw, 1.063rem);
 
   a {
     color: $accent;
@@ -16,18 +17,18 @@ body {
     .btn__submit {
       color: $bg;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 0.094rem;
       text-transform: uppercase;
     }
 
-    // .before,
-    // .btn__rating:hover {
-    //   color: $bg;
-    // }
-
     .after,
-    .hover {
+    .hover,
+    .clicked {
       color: $bg;
+    }
+
+    .rating__info {
+      color: $accent;
     }
   }
 }
