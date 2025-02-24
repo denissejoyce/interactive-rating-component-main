@@ -21,10 +21,12 @@ body {
       text-transform: uppercase;
     }
 
-    .after,
-    .hover,
-    .clicked {
-      color: $bg;
+    .ratings {
+      input:checked + label,
+      input:focus + label,
+      input:hover + label {
+        color: $bg;
+      }
     }
 
     .rating__info {

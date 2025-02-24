@@ -1,21 +1,6 @@
 @use "../util/" as *;
 
 .btn {
-  &__rating {
-    background-color: $card-1;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    justify-content: center;
-    display: inline-flex;
-    align-items: center;
-  }
-
-  &__rating:hover {
-    background-color: $accent;
-    cursor: pointer;
-  }
-
   &__submit {
     background-color: $accent;
     border: none;
@@ -30,17 +15,34 @@
   }
 }
 
-.rating {
+.ratings {
   @include toFlex(row, 0);
   justify-content: space-between;
-  margin: 0.938rem 0;
+  position: relative;
   width: 100%;
-}
 
-.after {
-  background-color: $font-heading;
-}
+  label {
+    @include toFlex(row, 0);
+    align-items: center;
+    background-color: $card-1;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+  }
 
-.clicked {
-  background-color: $accent;
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  input:hover + label,
+  input:focus + label {
+    background-color: $accent;
+    cursor: pointer;
+  }
+
+  input:checked + label {
+    background-color: $font-heading;
+  }
 }

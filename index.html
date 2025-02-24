@@ -39,24 +39,55 @@
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <section class="rating">
-          <span class="btn base btn__rating"
-            >1<span class="sr-only">star</span></span
-          >
-          <span class="btn base btn__rating"
-            >2<span class="sr-only">star</span></span
-          >
-          <span class="btn base btn__rating"
-            >3<span class="sr-only">star</span></span
-          >
-          <span class="btn base btn__rating"
-            >4<span class="sr-only">star</span></span
-          >
-          <span class="btn base btn__rating"
-            >5<span class="sr-only">star</span></span
-          >
+        <section class="ratings">
+          <input
+            type="radio"
+            class="btn__rating"
+            id="rating1"
+            name="rating"
+            value="1"
+          />
+          <label for="rating1">1</label>
+
+          <input
+            type="radio"
+            class="btn__rating"
+            id="rating2"
+            name="rating"
+            value="2"
+          />
+          <label for="rating2">2</label>
+
+          <input
+            type="radio"
+            class="btn__rating"
+            id="rating3"
+            name="rating"
+            value="3"
+          />
+          <label for="rating3">3</label>
+
+          <input
+            type="radio"
+            class="btn__rating"
+            id="rating4"
+            name="rating"
+            value="4"
+          />
+          <label for="rating4">4</label>
+
+          <input
+            type="radio"
+            class="btn__rating"
+            id="rating5"
+            name="rating"
+            value="5"
+          />
+          <label for="rating5">5</label>
         </section>
-        <button class="btn btn__submit" onclick="getRating()">Submit</button>
+
+        <button class="btn btn__submit" onclick="submit()">Submit</button>
+        <p class="error hidden">Please select a rating score.</p>
       </article>
 
       <article class="card card--thankYou">
